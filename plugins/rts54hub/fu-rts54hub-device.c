@@ -93,7 +93,7 @@ fu_rts54hub_device_write_flash (FuRts54HubDevice *self,
 {
 	GUsbDevice *usb_device = fu_usb_device_get_dev (FU_USB_DEVICE (self));
 	gsize actual_len = 0;
-	g_autofree gchar *datarw = g_memdup (data, datasz);
+	g_autofree guint8 *datarw = g_memdup (data, datasz);
 	if (!g_usb_device_control_transfer (usb_device,
 					    G_USB_DEVICE_DIRECTION_HOST_TO_DEVICE,
 					    G_USB_DEVICE_REQUEST_TYPE_VENDOR,
