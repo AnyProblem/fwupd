@@ -1,0 +1,17 @@
+# RTS54 HS
+[DeviceInstanceId=USB\VID_0BDA&PID_5423]
+Plugin = rts54hub
+FirmwareSizeMin = 0x10000
+FirmwareSizeMax = 0x10000
+
+# RTS54 SS
+[DeviceInstanceId=USB\VID_0BDA&PID_0423]
+Plugin = rts54hub
+FirmwareSizeMin = 0x10000
+FirmwareSizeMax = 0x10000
+
+# Custom
+[DeviceInstanceId=USB\VID_0BDA&PID_5420]
+Plugin = rts54hub
+FirmwareSizeMin = 0x10000
+FirmwareSizeMax = 0x10000
